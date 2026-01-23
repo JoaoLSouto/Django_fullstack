@@ -5,6 +5,7 @@ class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField("date published")
     active = models.BooleanField(default=True)
+    x = models.TextField()
 
 
 class Choice(models.Model):
