@@ -1,0 +1,94 @@
+# SEGURANÇA - Nunca versionar
+*.env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets.json
+secrets.yaml
+local_settings.py
+
+# Banco de dados
+db.sqlite3
+db.sqlite3-journal
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+
+# Ambientes virtuais
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Django
+*.log
+local_settings.py
+staticfiles/
+media/
+# Migrations (descomente se não quiser versionar)
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# Poetry
+# Descomente se não quiser versionar o lock
+# poetry.lock
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.hypothesis/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Redis
+dump.rdb
