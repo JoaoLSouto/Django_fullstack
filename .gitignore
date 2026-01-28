@@ -54,10 +54,14 @@ media/
 # Migrations (descomente se não quiser versionar)
 # */migrations/*.py
 # !*/migrations/__init__.py
+*.pyc
+__pycache__
 
 # Poetry
 # Descomente se não quiser versionar o lock
 # poetry.lock
+.venv-poetry/
+__pypackages__/
 
 # IDEs
 .vscode/
