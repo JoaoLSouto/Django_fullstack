@@ -7,5 +7,10 @@ urlpatterns = [
         "",
         views.get_name,
         name="get_name",
-    )
+    ),
+    path(
+        "thanks/<name>",
+        views.thanks,
+        name="thanks",
+    ),
 ]
