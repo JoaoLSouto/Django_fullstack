@@ -7,6 +7,10 @@ from .forms import NameForm, ContactForm
 def create(request):
     if request.method == "POST":
         form = ContactForm(request.Post)
+        if form.is_valid():
+            name = form.cleaned_data["subject"]
+            form.save()
+            return HttpResponseRedirect(reverse("contacts:thanks", args=(name,)))
         pass
     else:
         form = ContactForm()
