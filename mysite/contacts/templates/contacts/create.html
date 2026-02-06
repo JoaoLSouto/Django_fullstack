@@ -1,1 +1,5 @@
-{{form}}
+<form action='{%url 'contacts:create' %}' method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Enviar">
+</form>
