@@ -13,4 +13,9 @@ urlpatterns = [
         views.thanks,
         name="thanks",
     ),
+    path(
+        "create/",
+        views.create,
+        name="create",
+    ),
 ]

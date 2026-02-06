@@ -1,7 +1,16 @@
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from django.urls import reverse
-from .forms import NameForm
+from .forms import NameForm, ContactForm
+
+
+def create(request):
+    if request.method == "POST":
+        form = ContactForm(request.Post)
+        pass
+    else:
+        form = ContactForm()
+    return render(request, "contacts/create.html", {"form": form})
 
 
 def get_name(request):
