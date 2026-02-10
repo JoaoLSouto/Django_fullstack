@@ -11,6 +11,8 @@ dependencies = [
     "django"
 ]
 
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "test.settings"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
@@ -18,5 +20,6 @@ build-backend = "poetry.core.masonry.api"
 
 [dependency-groups]
 dev = [
-    "ipython"
+    "ipython",
+    "pytest-django"
 ]
