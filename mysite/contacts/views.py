@@ -7,9 +7,9 @@ from django.conf import settings
 
 def create(request):
     if not request.user.is_authenticated:
-        return redirect(f"{settings.LOGIN_URL_}?next={request.path}")
+        return redirect(f"{settings.LOGIN_URL}?next={request.path}")
     if request.method == "POST":
-        form = ContactForm(request.Post)
+        form = ContactForm(request.POST)
         if form.is_valid():
             name = form.cleaned_data["subject"]
             form.save()

@@ -8,7 +8,11 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "django"
+    "django",
+    "dj-database-url",
+    "psycopg2-binary",
+    "whitenoise[brotli]",
+    "gunicorn"
 ]
 
 [tool.pytest.ini_options]
